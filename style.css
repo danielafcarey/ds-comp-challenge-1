@@ -10,25 +10,14 @@ red: #ff6444*/
 
 body, html {
   font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
 
 }
 
+.page-container {
+}
+
 .box-container {
-  display: flex;
-  float: left;
-  flex-wrap: wrap;
   color: white;
-  float: right;
-  max-width: 60%;
-  height: 100%;
-  margin-top: -2px;
-  align-content: flex-start;
-  top: 0;
 }
 
 .box-container button {
@@ -39,7 +28,6 @@ body, html {
   font-size: 22px;
   margin: 20px 0 0 30px; 
   padding: 7px;
-  border: solid 2px;
 }
 
 .box.name-card img {
@@ -63,7 +51,7 @@ body, html {
   width: 430px;
   height: 430px;
   text-align: center;
-  flex: 1 1 auto;
+/*  flex: 1 1 auto;*/
   padding-top: 2px;
   font-size: 28px;
 }
@@ -76,7 +64,7 @@ body, html {
 
 .name-card {
   background-color: #474143;
-  width: 880px;
+  width: 860px;
   text-align: left;
 }
 
@@ -109,13 +97,7 @@ body, html {
 }
 
 .photo-container {
-  display: flex;
-  max-width: 40%;
-  height: auto;
 }
 
 .photo-container img {
-  width: 40vw;
-  height: auto;
-  /*margin-top: 22px;*/
 }
