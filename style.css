@@ -1,0 +1,121 @@
+/*BOX COLOR CODES:
+grey: #474143
+yellow: #ffc636
+teal: #00ada9
+green: #82BF6E
+red: #ff6444*/
+
+* {
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.box-container {
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  color: white;
+  float: right;
+  max-width: 60%;
+  height: 100%;
+  margin-top: -2px;
+  align-content: flex-start;
+  top: 0;
+}
+
+.box-container button {
+  background: transparent;
+  width: 150px;
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+  margin: 20px 0 0 30px; 
+  padding: 7px;
+  border: solid 2px;
+}
+
+.box.name-card img {
+  padding: 0;
+  width: 22px;
+}
+
+.box.name-card h1 {
+  font-size: 90px;
+  padding: 45px 0 20px 30px;
+}
+
+.box.name-card p {
+  font-size: 28px;
+  padding: 30px 30px 20px 30px;
+  line-height: normal;
+  font-weight: 300;
+}
+
+.box {
+  width: 430px;
+  height: 430px;
+  text-align: center;
+  flex: 1 1 auto;
+  padding-top: 2px;
+  font-size: 28px;
+}
+
+.box img {
+  margin: auto;
+  width: 75px;
+  padding: 130px 0 15px 0;
+}
+
+.name-card {
+  background-color: #474143;
+  width: 880px;
+  text-align: left;
+}
+
+.stats-card {
+  background-color: #ffc636;
+}
+
+.history-card {
+  background-color: #00ada9;
+}
+
+.geography-card {
+  background-color: #82BF6E;
+}
+
+.politics-card {
+  background-color: #ff6444 ;
+}
+
+.economy-card {
+  background-color: #ff6444;
+}
+
+.education-card {
+  background-color: #00ada9;
+}
+
+.culture-card {
+  background-color: #474143;
+}
+
+.photo-container {
+  display: flex;
+  max-width: 40%;
+  height: auto;
+}
+
+.photo-container img {
+  width: 40vw;
+  height: auto;
+  /*margin-top: 22px;*/
+}
