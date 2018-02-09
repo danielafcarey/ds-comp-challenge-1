@@ -10,24 +10,38 @@ red: #ff6444*/
 
 body, html {
   font-family: 'Montserrat', sans-serif;
-
+  color: white;
 }
 
 .page-container {
+  display: flex;
 }
 
 .box-container {
-  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
 }
 
-.box-container button {
-  background: transparent;
-  width: 150px;
-  display: inline-block;
-  color: white;
-  font-size: 22px;
-  margin: 20px 0 0 30px; 
-  padding: 7px;
+.box {
+  width: 33.33%;
+  height: 33.33vh;
+  text-align: center;
+  padding-top: 2px;
+  font-size: 28px;
+  flex: 1 1 auto;
+}
+
+.box img {
+  margin: auto;
+  width: 55px;
+  padding: 93px 0 15px 0;
+}
+
+.name-card {
+  background-color: #474143;
+  width: 66.67%;
+  text-align: left;
 }
 
 .box.name-card img {
@@ -36,36 +50,25 @@ body, html {
 }
 
 .box.name-card h1 {
-  font-size: 90px;
-  padding: 45px 0 20px 30px;
+  font-size: 60px;
+  padding: 35px 0 25px 30px;
 }
 
 .box.name-card p {
-  font-size: 28px;
-  padding: 30px 30px 20px 30px;
+  font-size: 20px;
+  padding: 0 30px 20px 30px;
   line-height: normal;
   font-weight: 300;
 }
 
-.box {
-  width: 430px;
-  height: 430px;
-  text-align: center;
-/*  flex: 1 1 auto;*/
-  padding-top: 2px;
-  font-size: 28px;
-}
-
-.box img {
-  margin: auto;
-  width: 75px;
-  padding: 130px 0 15px 0;
-}
-
-.name-card {
-  background-color: #474143;
-  width: 860px;
-  text-align: left;
+.box.name-card button {
+  background: transparent;
+  width: 150px;
+  display: inline-block;
+  color: white;
+  font-size: 21px;
+  margin: 20px 0 0 30px;
+  padding: 7px;
 }
 
 .stats-card {
@@ -97,7 +100,11 @@ body, html {
 }
 
 .photo-container {
+  float: right;
 }
 
 .photo-container img {
+  height: 100vh;
+  width: auto;
+
 }
