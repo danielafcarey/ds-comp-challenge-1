@@ -1,77 +1,108 @@
+@media only screen and (max-width : 1024px) {
+  .page-container {
+    grid-template-columns: 50px calc(100vw - 100px) 50px;
+    grid-template-rows: 50px 300px calc(100vh - 350px) repeat(7, 100px);
+  }
 
-@media only screen and (max-width : 1200px) {
+  header {
+    grid-area: 2 / 2 / 3 / 3;
+    opacity: .9;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
 
   .box {
-    width: 100%;
-    height: 15vh;
-    font-size: 16px;
+    height: 100%;
+    text-align: left;
+  }
+
+  .box:hover {
+    opacity: 1;
   }
 
   .box img {
-    padding: 19px 0 15px 0;
+    margin: 5px;
+    width: 40px;
+    padding: 25px 0 15px 30px;
+    float: left;
   }
 
-  .box.name-card {
-    width: 100%;
-    height: 250px;
-    position: absolute;
-  }
-
-  .box.name-card p {
-    font-size: 17px;
-  }
-
-  .box.name-card button {
-    width: 100px;
+  .box h2 {
+    font-size: 35px;
     display: inline-block;
-    color: white;
-    font-size: 14px;
-    margin: 0 0 0 30px;
-    padding: 7px;
-  }
-
-  .box.name-card img {
-    padding: 0;
-    width: 18px;
+    padding: 30px 0 0 30px;
   }
 
   .box.stats-card {
-    margin-top: 250px;
+    grid-area: 4 / 1 / 5 / 4;
   }
 
-  .photo-container {
-    width: 80%;
+  .box.history-card {
+    grid-area: 5 / 1 / 6 / 4;
+  }
+
+  .box.geography-card {
+    grid-area: 6 / 1 / 7 / 4;
+  }
+
+  .box.politics-card {
+    grid-area: 7 / 1 / 8 / 4;
+  }
+
+  .box.economy-card {
+    grid-area: 8 / 1 / 9 / 4;
+  }
+
+  .box.education-card {
+    grid-area: 9 / 1 / 10 / 4;
+  }
+
+  .box.culture-card {
+    grid-area: 10 / 1 / 11 / 4;
+  }
+
+  .main-photo {
+    grid-area: 1 / 1 / 4 / 4;
     height: auto;
+    width: 100%;
+    order: -1;
   }
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 648px) {
 
-  .box.name-card {
-    height: 250px;
+  header {
+    height: 200px;
   }
 
-/*  .box {
-    width: 100%;
-    height: 15vh;
-    font-size: 16px;
-  }*/
-
-  .box.history-card {
-    margin-top: 0;
+  header h1 {
+    font-size: 30px;
+    padding-bottom: 15px;
   }
 
-  .photo-container {
-    width: 80%;
+  header p {
+    font-size: 12px;
   }
 
-/*  .photo-container img {
-    width: 100%;
-    height: auto;
-  }*/
+  header button {
+    width: 85px;
+    font-size: 14px;
+    padding: 4px 0 6px 0;
+    margin: 0 0 0 30px;
+  }
 
-}
+  header img {
+    width: 16px;
+  }
+
+  .main-photo {
+    height: 100%;
+    width: auto;
+  }
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 320px) {
