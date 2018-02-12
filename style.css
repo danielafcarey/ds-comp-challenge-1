@@ -134,3 +134,7 @@ header button:hover {
 .right-arrow {
   right: 20px;
 }
+
+.down-arrow {
+  display: none;
+}

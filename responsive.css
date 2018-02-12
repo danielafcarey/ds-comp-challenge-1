@@ -80,6 +80,19 @@
     display: none;
   }
 
+  .down-arrow {
+    display: grid;
+    grid-area: 3 / 2 / 4 / 3;
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .down-arrow:hover {
+    transform: scale(1.1);
+  }
+
 /*medium-small screens*/
 @media only screen and (max-width : 648px) {
 
