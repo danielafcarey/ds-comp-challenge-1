@@ -122,3 +122,40 @@
   }
 
 }
+
+/*smallest screens*/
+@media only screen and (max-width : 430px) {
+  header {
+    height: 200px;
+  }
+
+  header h1 {
+    font-size: 27px;
+    padding: 20px 0 15px 20px;
+  }
+
+  header p {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  header button {
+    width: 77px;
+    font-size: 14px;
+    padding: 4px 0 6px 0;
+    margin: 0 0 0 20px;
+  }
+
+  header img {
+    width: 14px;
+  }
+
+  .box h2 {
+    font-size: 25px;
+    padding-top: 35px;
+  }
+
+}
+
+
+
