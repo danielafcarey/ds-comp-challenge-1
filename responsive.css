@@ -1,13 +1,15 @@
+/*xl screens*/
 @media only screen and (min-width : 1600px) {
   .main-photo {
     width: 100%;
   }
 }
 
+/*large-medium screens*/
 @media only screen and (max-width : 1024px) {
   .page-container {
-    grid-template-columns: 50px calc(100vw - 100px) 50px;
-    grid-template-rows: 50px 300px calc(100vh - 350px) repeat(7, 100px);
+    grid-template-columns: 50px calc(100% - 100px) 50px;
+    grid-template-rows: 50px 300px calc(100% - 350px) repeat(7, 90px);
   }
 
   header {
@@ -22,10 +24,6 @@
   .box {
     height: 100%;
     text-align: left;
-  }
-
-  .box:hover {
-    opacity: 1;
   }
 
   .box img {
@@ -74,6 +72,7 @@
     height: auto;
     width: 100%;
     order: -1;
+    margin-bottom: -2px;
   }
 
   .image-arrows,
@@ -81,7 +80,7 @@
     display: none;
   }
 
-
+/*medium-small screens*/
 @media only screen and (max-width : 648px) {
 
   header {
@@ -91,6 +90,7 @@
   header h1 {
     font-size: 30px;
     padding-bottom: 15px;
+    padding-top: 30px;
   }
 
   header p {
@@ -106,11 +106,6 @@
 
   header img {
     width: 16px;
-  }
-
-  .main-photo {
-    height: 100%;
-    width: auto;
   }
 
 }
